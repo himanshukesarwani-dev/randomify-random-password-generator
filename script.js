@@ -5,3 +5,14 @@ const characters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", 
 ];
 const passwordOne = document.getElementById("password-one");
 const passwordTwo = document.getElementById("password-two");
+let pass = "";
+
+
+generateBtn.addEventListener("click", () => {
+
+    for (let i = 0; i < lengthOfPassword.value; i++) {
+        pass += characters[Math.floor(Math.random() * characters.length)];
+    }
+
+    console.log(pass)
+})
