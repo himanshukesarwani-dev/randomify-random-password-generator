@@ -41,3 +41,21 @@ generateBtn.addEventListener("click", () => {
 lengthOfPassword.addEventListener("focus", (event) => {
     lengthOfPassword.value = ""
 })
+
+passwordOne.addEventListener("click", () => {
+    copyfunc(passwordOne)
+})
+passwordTwo.addEventListener("click", () => {
+    copyfunc(passwordTwo)
+})
+
+
+
+function copyfunc(passwordName) {
+
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(passwordName.textContent);
+
+    // Alert the copied text
+    alert("Copied the text: " + passwordName.textContent);
+}
