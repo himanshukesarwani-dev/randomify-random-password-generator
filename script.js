@@ -18,9 +18,17 @@ function clickEventHandler(passwordName) {
 
     passwordName.innerText = pass;
     pass = "";
-    lengthOfPassword.value = ""
+
 }
 
 generateBtn.addEventListener("click", () => {
     clickEventHandler(passwordOne)
+})
+
+generateBtn.addEventListener("click", () => {
+    clickEventHandler(passwordTwo)
+})
+
+lengthOfPassword.addEventListener("focus", (event) => {
+    lengthOfPassword.value = ""
 })
