@@ -1,7 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
 :root {
     --background-color: #1C1C1C;
     --gray: #1F2937;
     --green-color: #4ADF86;
     
   }
+
+  
+  .green-color{
+    color: var(--green-color);
+  }
+
+  body {
+    background-color: var(--gray);
+    font-family: 'Karla', sans-serif;
+    padding: 0;
+    margin: 0;
+
+  }
+
+.navbar {
+  font-size: 40px;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  padding: 0px;
+}
+
+.container {
+  width: 500px;
+  margin: 20px auto;
+ ;
+}
+
+#length-of-password {
+  background-color: #273549;
+  border: none;
+  color: white;
+ margin: 20px auto;
+ width: 40px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  
+}
+
+  h1 {
+   
+
+color: var(--green-color);
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  }
+
+  .color-white-title {
+    color: white;
+  }
+
+ .main-subline {
+  
+  color: whitesmoke;
+   font-family: 'Inter';;
+
+  }
+
+  /* btn */
+#generate-btn {
+
+
+display: block;
+background-color: #10B981;
+color: whitesmoke;
+padding:10px 15px;
+margin: 30px 0;
+border: none;
+border-radius: 6px;
+
+  }
+
+  #generate-btn:hover {
+   cursor: pointer;
+  }
+
+.flex-container {
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#password-one, #password-two {
+  
+  width: 211px;
+  height: 39px;
+  border: none;
+  background-color: #273549;
+  margin: 10px 5px;
+  color: var(--green-color);
+}
+footer {
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+} 
+
+.credit a{
+
+  text-decoration: none;
+  color: var(--green-color);
+}
+
+small {
+  color: white;
+}
+
+hr {
+  
+border: 1px solid  #2F3E53;
+  
+}
