@@ -45,7 +45,7 @@ header {
   padding: 5px 10px;
   border: none;
   border-radius: 4px;
-  
+
 }
 
   h1 {
@@ -102,7 +102,10 @@ border-radius: 6px;
   background-color: #273549;
   margin: 10px 5px;
   color: var(--green-color);
+  padding: 5px 10px;
+  border-radius: 3px;
 }
+
 footer {
   margin-top: 100px;
   text-align: center;
