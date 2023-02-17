@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav></nav>
+        <nav class="navbar green-color">Random<span class="color-white-title">ify</span>
+        </nav>
     </header>
     
-    <main>
+    <main class="container">
         <section>
-            <h1>Generate a random password</h1>
-            <p>Never use an insecure password again.</p>
+            <h1><span class="color-white-title">Generate a</span> Random Password!</h1>
+            <p class="main-subline">Never use an insecure password again.</p>
        
-        <label for="length-of-password">Length of Password:</label>
+        <label for="length-of-password" class="color-white-title">Length of Password:</label>
     <input id="length-of-password" type="number">
     
     <button id="generate-btn">Generate Password</button>
-    
-    <div> 
-        <p id="password-one"></p>
-        <p id="password-two"></p>
+
+    <div class="flex-container"> 
+      <textarea  id="password-one"></textarea>
+      <textarea  id="password-two"></textarea>
     </div>
 </section>
 

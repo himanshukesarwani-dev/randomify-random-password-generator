@@ -22,7 +22,6 @@ function getRandomPassword(passwordName) {
     }
 
     passwordName.innerText = pass; // appending the password to the UI
-    passwordName.style.display = "inline-block"
     pass = ""; // resetting it for the next call.
 
 }
