@@ -9,11 +9,18 @@ let passwordTwo = document.getElementById("password-two");
 let pass = "";
 
 
-generateBtn.addEventListener("click", () => {
+function clickEventHandler(passwordName) {
+
 
     for (let i = 0; i < lengthOfPassword.value; i++) {
         pass += characters[Math.floor(Math.random() * characters.length)];
     }
 
-    console.log(pass)
+    passwordName.innerText = pass;
+    pass = "";
+    lengthOfPassword.value = ""
+}
+
+generateBtn.addEventListener("click", () => {
+    clickEventHandler(passwordOne)
 })
