@@ -22,6 +22,7 @@ function getRandomPassword(passwordName) {
     }
 
     passwordName.innerText = pass; // appending the password to the UI
+    passwordName.style.display = "inline-block"
     pass = ""; // resetting it for the next call.
 
 }
@@ -52,10 +53,12 @@ passwordTwo.addEventListener("click", () => {
 
 
 function copyfunc(passwordName) {
+    if (passwordName.textContent) {
 
-    // Copy the text inside the text field
-    navigator.clipboard.writeText(passwordName.textContent);
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(passwordName.textContent);
 
-    // Alert the copied text
-    alert("Copied the text: " + passwordName.textContent);
+        // Alert the copied text
+        alert("Copied the text: " + passwordName.textContent);
+    }
 }
